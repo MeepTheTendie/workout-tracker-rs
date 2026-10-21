@@ -7,6 +7,11 @@
     "command": "bash -c 'source /home/meep/.cargo/env && /home/meep/.cargo/bin/worker-build --release'"
   },
   "observability": { "enabled": true },
+  "routes": [
+    { "pattern": "myworkouttracker.xyz", "custom_domain": true },
+    { "pattern": "www.myworkouttracker.xyz", "custom_domain": true }
+  ],
+  "workers_dev": true,
   "vars": {
     "SESSION_LIFETIME": "3600"
   },
